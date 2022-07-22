@@ -10,10 +10,12 @@ namespace UploadPrj.Controllers
     {
 
         private IPrintModelService _printModelService;
+        private IReportService _reportService;
 
-        public PrintModelController(IPrintModelService printModelService)
+        public PrintModelController(IPrintModelService printModelService, IReportService reportService)
         {
             _printModelService = printModelService;
+            _reportService = reportService;
         }
         [HttpGet("getall")]
         public IActionResult GetAll()
@@ -43,7 +45,10 @@ namespace UploadPrj.Controllers
             var result = _printModelService.Add(printModel);
             if (result)
             {
+                _reportService.CreateUserLog(printModel);
                 return Ok(result);
+
+
             }
             return BadRequest(result);
         }

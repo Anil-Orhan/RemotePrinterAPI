@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataAccessLayer.Abstract;
+using EntityLayer.Abstract;
 using EntityLayer.Concrete;
 using EntityLayer.DTO;
 using ServiceLayer.Abstract;
@@ -11,50 +13,47 @@ namespace ServiceLayer.Concrete
 {
     public  class ReportService : IReportService
     {
-        //private IUserService _userService;
-        //private IPrinterService _printerService;
-        //private IFileService _fileService;
-        //private IAuthService _authService;
-      
-        
+        private IUserService _userService;
+        private IPrinterService _printerService;
+        private IFileService _fileService;
+        private IAuthService _authService;
+        private IUserLogDal _userLogDal;
 
 
-         ReportService(IUserService userService, IPrinterService printerService,
-             IFileService fileService, IAuthService authService)
+
+     public ReportService(IUserService userService, IPrinterService printerService,
+             IFileService fileService, IAuthService authService,IUserLogDal userLogDal)
         {
-            //_fileService = fileService;
-            //_userService = userService;
-            //_printerService = printerService;
            
-            //_authService = authService;
-          
+                _fileService=fileService;
+                _printerService=printerService;
+                _userService=userService;
+                _authService=   authService;
+                _userLogDal=userLogDal;
+                
 
         }
 
-      
-      //public  UserLogDto UserLogCreate(PrintModel printModel)
-      //{
-      //    UserLogDto userLog = new UserLogDto();
-      //      var user = _userService.GetById(_authService.GetActiveUserId());
+     public void CreateUserLog(PrintModel printModel)
+     {
+         UserLogDto user = new UserLogDto() {
+             PrinterId = printModel.PrinterId,
+             PrinterName =_printerService.GetById(printModel.PrinterId).PrinterName,
+             PrintDate = printModel.Date,
+             UserFullName = _userService.GetById(printModel.UserId).name+" "+ _userService.GetById(printModel.UserId).lastName,
+             FileId = printModel.FileId,
+             UserId = printModel.UserId,
+             UserName = _userService.GetById(printModel.UserId).userName
+
+
+         };
+         _userLogDal.Add(user);
+     }
+    
+     
           
-      //      if (user != null)
-      //      {
+     
 
-
-      //          userLog.PrintDate = printModel.Date;
-      //          userLog.UserId = user.id;
-      //          userLog.PrintDate=printModel.Date;
-      //          userLog.FileId = printModel.FileId;
-
-            
-      //          return userLog;
-      //      }
-      //      else
-      //      {
-      //          throw new Exception("User Not Faund");
-      //      }
-
-
-      //  }
+       
     }
 }

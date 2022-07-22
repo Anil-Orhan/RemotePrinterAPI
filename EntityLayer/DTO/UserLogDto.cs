@@ -7,7 +7,7 @@ using EntityLayer.Abstract;
 
 namespace EntityLayer.DTO
 {
-    public class UserLogDto:IEntity,IUserLogDto
+    public class UserLogDto:IEntity,IUserLogDto,IDto
     {
         public Guid Id { get; set; }
         public Guid UserId { get; set; }

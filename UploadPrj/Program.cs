@@ -19,6 +19,7 @@ builder.Services.AddSingleton<IUserDal, EfUserDal>();
 builder.Services.AddSingleton<IFileDal, EfFileDal>();
 builder.Services.AddSingleton<IPrinterDal, EfPrinterDal>();
 builder.Services.AddSingleton<IPrintModelDal, EfPrintModelDal>();
+builder.Services.AddSingleton<IUserLogDal,EfUserLogDal>();
 
 
 
@@ -27,6 +28,8 @@ builder.Services.AddSingleton<IAuthService, AuthService>();
 builder.Services.AddSingleton<IFileService, FileService>();
 builder.Services.AddSingleton<IPrinterService, PrinterService>();
 builder.Services.AddSingleton<IPrintModelService, PrintModelService>();
+builder.Services.AddTransient<IReportService,ReportService>();
+
 
 
 var app = builder.Build();
