@@ -10,5 +10,6 @@ namespace ServiceLayer.Abstract
     {
 
         bool Login(string username,string password);
+        public Guid GetActiveUserId();
     }
 }

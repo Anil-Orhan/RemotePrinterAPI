@@ -8,15 +8,20 @@ namespace ServiceLayer.Concrete
 
     {
 
-        IPrintModelDal _printModelDal;
-        public PrintModelService(IPrintModelDal printModelDal)
+       private IPrintModelDal _printModelDal;
+       //private IReportService _reportService;
+
+        public PrintModelService(IPrintModelDal printModelDal/*, IReportService reportService*/)
         {
-            _printModelDal= printModelDal;
+            _printModelDal = printModelDal;
+            //_reportService = reportService;
         }
 
         public bool Add(PrintModel entity)
         {
             _printModelDal.Add(entity);
+            //_reportService.UserLogCreate(entity);
+
             return true;
         }
 

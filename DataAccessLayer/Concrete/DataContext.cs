@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EntityLayer.Concrete;
+using EntityLayer.DTO;
 using Microsoft.EntityFrameworkCore;
 using File = EntityLayer.Concrete.File;
 
@@ -22,5 +23,6 @@ namespace DataAccessLayer.Concrete
         public DbSet<PrintModel> PrintModels { get; set; }
         public DbSet<File> Files { get; set; }
         public DbSet<Printer> Printers { get; set; }
+        public DbSet<UserLogDto> UserLogs { get; set; }
     }
 }
