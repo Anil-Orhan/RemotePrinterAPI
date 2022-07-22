@@ -15,7 +15,7 @@ namespace DataAccessLayer.Concrete
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //Server bağlantısı
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-OGPLUPQ\SQLEXPRESS; Database=TestDataBase; Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server=78.111.97.164; Database=PRINTOMI;  User=sa;Password=-azsxdcfv@N9; ");
         }
 
         public DbSet<User> Users { get; set; }
