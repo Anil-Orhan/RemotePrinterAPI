@@ -1,6 +1,7 @@
 using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete.EntityFramework;
 using EntityLayer.Abstract;
+using EntityLayer.Concrete;
 using EntityLayer.DTO;
 using ServiceLayer.Abstract;
 using ServiceLayer.Concrete;
@@ -20,6 +21,9 @@ builder.Services.AddSingleton<IFileDal, EfFileDal>();
 builder.Services.AddSingleton<IPrinterDal, EfPrinterDal>();
 builder.Services.AddSingleton<IPrintModelDal, EfPrintModelDal>();
 builder.Services.AddSingleton<IUserLogDal,EfUserLogDal>();
+builder.Services.AddSingleton<IOperationDal, EfOperationDal>();
+builder.Services.AddSingleton<IOptionDal, EfOptionDal>();
+builder.Services.AddSingleton<IWalletActivityDal, EfWalletActivityDal>();
 
 
 
@@ -28,6 +32,9 @@ builder.Services.AddSingleton<IAuthService, AuthService>();
 builder.Services.AddSingleton<IFileService, FileService>();
 builder.Services.AddSingleton<IPrinterService, PrinterService>();
 builder.Services.AddSingleton<IPrintModelService, PrintModelService>();
+builder.Services.AddSingleton<IOperationService, OperationService>();
+builder.Services.AddSingleton<IOptionService, OptionService>();
+builder.Services.AddSingleton<IWalletActivityService, WalletActivityService>();
 builder.Services.AddTransient<IReportService,ReportService>();
 
 

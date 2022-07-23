@@ -24,5 +24,9 @@ namespace DataAccessLayer.Concrete
         public DbSet<File> Files { get; set; }
         public DbSet<Printer> Printers { get; set; }
         public DbSet<UserLogDto> UserLogs { get; set; }
+        public DbSet<Option> Options { get; set; }
+        public DbSet<Operation> Operations { get; set; }
+        public DbSet<WalletActivity> WalletActivities { get; set; }
+
     }
 }

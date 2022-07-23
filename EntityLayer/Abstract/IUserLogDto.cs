@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Abstract
 {
-    public interface IUserLogDto
+    public interface IUserLogDto:IDto,IEntity
     {
         public Guid Id { get; set; }
         public Guid UserId { get; set; }

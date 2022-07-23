@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer.Abstract;
+using EntityLayer.Abstract;
 
 namespace DataAccessLayer.Concrete.EntityFramework
 {
