@@ -11,13 +11,13 @@ namespace ServiceLayer.Concrete
 {
     public class OptionService:IOptionService
     {
-        private IOperationService _operationService;
+       
         private IOptionDal _optionDal;
 
-        public OptionService(IOptionDal optionDal,IOperationService operationService)
+        public OptionService(IOptionDal optionDal)
         {
             _optionDal = optionDal;
-            _operationService = operationService;
+           
         }
         public bool Add(Option entity)
         {

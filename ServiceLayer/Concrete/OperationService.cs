@@ -7,10 +7,12 @@ namespace ServiceLayer.Concrete;
 public class OperationService:IOperationService
 {
     private IOperationDal _operationDal;
+    private IOptionService _optionService;
 
-    public OperationService(IOperationDal operationDal)
+    public OperationService(IOperationDal operationDal, IOptionService optionService)
     {
-            _operationDal=operationDal;
+        _operationDal = operationDal;
+        _optionService = optionService;
     }
     public bool Add(Operation entity)
     {
