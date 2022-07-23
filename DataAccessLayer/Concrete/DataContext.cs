@@ -27,6 +27,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<Option> Options { get; set; }
         public DbSet<Operation> Operations { get; set; }
         public DbSet<WalletActivity> WalletActivities { get; set; }
+        public DbSet<Wallet> Wallets { get; set; }
 
     }
 }

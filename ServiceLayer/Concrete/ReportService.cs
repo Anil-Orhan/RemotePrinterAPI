@@ -49,11 +49,14 @@ namespace ServiceLayer.Concrete
          };
          _userLogDal.Add(user);
      }
-    
-     
-          
-     
 
-       
+
+     public List<UserLogDto> UserLogDto()
+     {
+         return _userLogDal.GetAll();
+     }
+
+
+
     }
 }

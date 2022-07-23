@@ -1,0 +1,56 @@
+﻿@model AllListModel
+@{
+    ViewData["Title"] = "Logs ";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+
+@*LOGS*@
+
+<div class="row">
+    
+    <div class="col-12 m-1 p-2"><h1 class="display-4 text-center fs-5 fw-bold">PRINTS</h1>
+        <table class="table table-striped table-bordered  m-3 p-2">
+            <thead>
+            <tr>
+                   
+                <th scope="col">ID</th>
+                <th scope="col">USER ID</th>
+                <th scope="col">FULLNAME </th>
+                <th scope="col">PRINTER ID </th>
+                <th scope="col">PRINTER NAME</th>
+                <th scope="col">PRINT DATE</th>
+                <th scope="col">FILE ID </th>
+                
+                
+
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.UserLogs)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.UserId</td>
+                    <td>@item.UserFullName</td>
+                    <td>@item.PrinterId</td>
+                    <td>@item.PrinterName</td>
+                    <td>@item.PrintDate</td>
+                    <td>@item.FileId</td>
+                  
+                   
+
+                
+
+                </tr>
+            }
+       
+            </tbody>
+        </table>
+    
+    </div>
+
+
+</div>
+

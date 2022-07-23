@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UploadPrj", "UploadPrj\Uplo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{4E9EE1CC-2210-4D9B-99D6-F4E0572785F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{8C7DA304-5666-48C1-A08C-CC2EE0930221}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{8C7DA304-5666-48C1-A08C-CC2EE0930221}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{8A05AE6D-CFB2-462B-9AB6-B72936D886BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{8A05AE6D-CFB2-462B-9AB6-B72936D886BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTestPanelMVC", "WebTestPanelMVC\WebTestPanelMVC.csproj", "{59214305-6993-4259-B1DA-0F03B37AEA5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8A05AE6D-CFB2-462B-9AB6-B72936D886BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A05AE6D-CFB2-462B-9AB6-B72936D886BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A05AE6D-CFB2-462B-9AB6-B72936D886BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59214305-6993-4259-B1DA-0F03B37AEA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59214305-6993-4259-B1DA-0F03B37AEA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59214305-6993-4259-B1DA-0F03B37AEA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59214305-6993-4259-B1DA-0F03B37AEA5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

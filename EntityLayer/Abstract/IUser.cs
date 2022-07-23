@@ -16,6 +16,7 @@ namespace EntityLayer.Abstract
         public DateTime birthDate { get; set; }
         public string address { get; set; }
         public string phoneNumber { get; set; }
+        public Guid WalletId { get; set; }
 
     }
 }

@@ -12,6 +12,7 @@ namespace EntityLayer.Abstract
         public Guid UserId { get; set; }
         public string FileUrl { get; set; }
         public string CloudUrl { get; set; }
+        public Guid OperationId { get; set; }
 
     }
 }

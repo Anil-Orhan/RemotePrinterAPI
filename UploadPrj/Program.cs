@@ -24,6 +24,8 @@ builder.Services.AddSingleton<IUserLogDal,EfUserLogDal>();
 builder.Services.AddSingleton<IOperationDal, EfOperationDal>();
 builder.Services.AddSingleton<IOptionDal, EfOptionDal>();
 builder.Services.AddSingleton<IWalletActivityDal, EfWalletActivityDal>();
+builder.Services.AddSingleton<IWalletDal, EfWalletDal>();
+
 
 
 
@@ -35,6 +37,7 @@ builder.Services.AddSingleton<IPrintModelService, PrintModelService>();
 builder.Services.AddSingleton<IOperationService, OperationService>();
 builder.Services.AddSingleton<IOptionService, OptionService>();
 builder.Services.AddSingleton<IWalletActivityService, WalletActivityService>();
+builder.Services.AddSingleton<IWalletService, WalletService>();
 builder.Services.AddTransient<IReportService,ReportService>();
 
 

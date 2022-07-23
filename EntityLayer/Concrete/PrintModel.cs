@@ -16,6 +16,6 @@ namespace EntityLayer.Concrete
 
         public Guid FileId { get; set; }
         public DateTime Date { get; set; }
-
+        public Guid OperationId { get; set; }
     }
 }
