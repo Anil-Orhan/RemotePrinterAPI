@@ -65,3 +65,6 @@ C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\DataAcc
 C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.csproj.CopyComplete
 C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\CoreLayer.dll
 C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\CoreLayer.pdb
+C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\startbootstrap-sb-admin-2-gh-pages\package-lock.json
+C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\startbootstrap-sb-admin-2-gh-pages\package.json
+C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\startbootstrap-sb-admin-2-gh-pages\vendor\fontawesome-free\package.json
