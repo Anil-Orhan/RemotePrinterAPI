@@ -65,6 +65,7 @@ namespace ServiceLayer.Concrete
                 Balance = 0
             };
             _walletService.Add(wallet);
+            Thread.Sleep(500);
             WalletActivity walletActivity = new WalletActivity {UserId = user.id,NewBalance = 0,PreviousBalance = 0,Amount = 0,OperationType = "Wallet Creating",ActivityDate = DateTime.Now};
             _walletActivityService.Add(walletActivity);
             return wallet.Id;

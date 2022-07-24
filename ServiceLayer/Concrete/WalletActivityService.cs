@@ -7,14 +7,32 @@ namespace ServiceLayer.Concrete;
 public class WalletActivityService:IWalletActivityService
 {
     private IWalletActivityDal _walletActivityDal;
-    public WalletActivityService(IWalletActivityDal walletActivityDal)
+  
+    private IWalletService _walletService;
+    public WalletActivityService(IWalletActivityDal walletActivityDal, IWalletService walletService)
     {
-            _walletActivityDal=walletActivityDal;
+        _walletActivityDal = walletActivityDal;
+       
+        _walletService = walletService;
     }
     public bool Add(WalletActivity entity)
     {
-        _walletActivityDal.Add(entity);
-        return true;
+        //var userCheck=UserCheck(entity.UserId);
+     
+          var wallet=  _walletService.GetAll().SingleOrDefault(p => p.UserId == entity.UserId);
+             if (wallet !=null)
+             {
+              _walletActivityDal.Add(entity);
+                return true;
+              }
+          else
+          {
+              return false;
+          }
+        
+      
+
+       
     }
 
     public void Delete(WalletActivity entity)
@@ -36,4 +54,20 @@ public class WalletActivityService:IWalletActivityService
     {
       return  _walletActivityDal.Get(p=>p.Id==Id);
     }
+
+    //public bool UserCheck(Guid userId)
+    //{
+
+    //    var check = _userService.GetById(userId);
+    //    if (check == null)
+    //    {
+    //        return false;
+    //    }
+
+    //    else
+    //    {
+    //        return true;
+    //    }
+
+    //}
 }

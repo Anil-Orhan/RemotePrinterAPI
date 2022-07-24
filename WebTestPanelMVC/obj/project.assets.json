@@ -598,6 +598,19 @@
           }
         }
       },
+      "CoreLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "EntityLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CoreLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoreLayer.dll": {}
+        }
+      },
       "DataAccessLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -627,6 +640,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "CoreLayer": "1.0.0",
           "DataAccessLayer": "1.0.0",
           "EntityLayer": "1.0.0"
         },
@@ -1801,6 +1815,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CoreLayer/1.0.0": {
+      "type": "project",
+      "path": "../CoreLayer/CoreLayer.csproj",
+      "msbuildProject": "../CoreLayer/CoreLayer.csproj"
     },
     "DataAccessLayer/1.0.0": {
       "type": "project",

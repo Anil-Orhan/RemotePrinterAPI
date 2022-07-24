@@ -32,12 +32,29 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("FileExtension")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("FileSize")
+                        .HasColumnType("float");
+
                     b.Property<string>("FileUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("OperationId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("PageNumber")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -60,9 +77,6 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("OptionId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("PrintModelId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<double>("TotalAmount")
@@ -90,6 +104,9 @@ namespace DataAccessLayer.Migrations
 
                     b.Property<short>("Colorless")
                         .HasColumnType("smallint");
+
+                    b.Property<int>("PageNumber")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

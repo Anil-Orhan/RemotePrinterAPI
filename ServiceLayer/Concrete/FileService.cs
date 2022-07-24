@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EntityLayer.Concrete;
 
 namespace ServiceLayer.Concrete
 {
@@ -41,6 +42,13 @@ namespace ServiceLayer.Concrete
         public void Update(EntityLayer.Concrete.File entity)
         {
             _fileDal.Update(entity);
+        }
+
+        public string TakeFileExtension(EntityLayer.Concrete.File file)
+        {
+           
+
+            return "";
         }
     }
 

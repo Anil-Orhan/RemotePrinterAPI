@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EntityLayer.Concrete;
 using ServiceLayer.Abstract;
+using UploadPrj.Utilities;
 
 namespace ServiceLayer.Concrete
 {
@@ -21,8 +22,9 @@ namespace ServiceLayer.Concrete
             var result = _userService.GetByUserName(username);
             if (result.password==password)
             {
+                StaticValues.ActiveUser = result;
                 return true;
-                this.activeUser = result;
+              
             }
             else
             {

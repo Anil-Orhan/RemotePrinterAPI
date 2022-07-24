@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using EntityLayer.Concrete;
+using EntityLayer.DTO;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServiceLayer.Abstract;
+using File = EntityLayer.Concrete.File;
 
 namespace UploadPrj.Controllers
 {
@@ -41,6 +44,17 @@ namespace UploadPrj.Controllers
         public IActionResult Add(EntityLayer.Concrete.Option option)
         {
             var result = _optionService.Add(option);
+            if (result)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpPost("addOperation")]
+        public IActionResult AddForOperation(OptionControllerEntityDto optionDto)
+        {
+            var result = _optionService.AddOptionForOperation(optionDto.Option,optionDto.User,optionDto.Files,optionDto.Printer);
             if (result)
             {
                 return Ok(result);

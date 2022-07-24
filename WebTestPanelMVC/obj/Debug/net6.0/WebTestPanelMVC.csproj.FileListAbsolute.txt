@@ -63,3 +63,5 @@ C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\EntityL
 C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\ServiceLayer.pdb
 C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\DataAccessLayer.pdb
 C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.csproj.CopyComplete
+C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\CoreLayer.dll
+C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\CoreLayer.pdb

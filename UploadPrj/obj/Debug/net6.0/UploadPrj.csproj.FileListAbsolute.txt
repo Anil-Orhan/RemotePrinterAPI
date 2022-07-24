@@ -3,7 +3,6 @@ C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\obj\Debug\net6.0\UploadPrj.Gen
 C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\obj\Debug\net6.0\UploadPrj.AssemblyInfoInputs.cache
 C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\obj\Debug\net6.0\UploadPrj.AssemblyInfo.cs
 C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\obj\Debug\net6.0\UploadPrj.csproj.CoreCompileInputs.cache
-C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\obj\Debug\net6.0\UploadPrj.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\obj\Debug\net6.0\UploadPrj.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\bin\Debug\net6.0\appsettings.json
@@ -65,3 +64,5 @@ C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\bin\Debug\net6.0\ServiceLayer.
 C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\bin\Debug\net6.0\EntityLayer.pdb
 C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\bin\Debug\net6.0\ServiceLayer.pdb
 C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\bin\Debug\net6.0\CoreLayer.dll
+C:\Users\Vodases\source\repos\UploadPrj\UploadPrj\bin\Debug\net6.0\CoreLayer.pdb
