@@ -1,0 +1,44 @@
+﻿@model AllListModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@*PRINTERS TABLE*@
+<div class="row">
+    
+    <div class="col-12"><h1 class="display-4 text-center fs-5 fw-bold">Printers</h1>
+        <table class="table table-bordered table-dark m-3 p-2">
+            <thead>
+            <tr>
+               
+                <th scope="col">Id</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Model </th>
+                <th scope="col">PrinterIP </th>
+                <th scope="col">Coordinate </th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Printers)
+            {
+                <tr>
+                   
+                    <td>@item.Id</td>
+                    <td>@item.Brand</td>
+                    <td>@item.Model</td>
+                    <td>@item.PrinterIP</td>
+                    <td>@item.Coordinate</td>
+
+
+                </tr>
+            }
+       
+            </tbody>
+        </table>
+    
+    </div>
+   
+</div>
+

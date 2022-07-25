@@ -12,7 +12,7 @@ namespace EntityLayer.Abstract
         public Guid Id { get; set; }
         public Guid UserId { get; set; }
         public Guid PrinterId { get; set; }
-      
+        
         public Guid FileId { get; set; }
         public DateTime Date { get; set; }
         public Guid OperationId { get; set; }

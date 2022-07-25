@@ -11,6 +11,11 @@ namespace WebTestPanelMVC.Models
         public List<User> Users { get; set; }
         public List<PrintModel> PrintModels { get; set; }
         public List<File> Files { get; set; }
+        public List<Option> Options { get; set; }
+        public List<Operation> Operations { get; set; }
+        public List<WalletActivity> WalletActivities { get; set; }
+        public List<Wallet> Wallets { get; set; }
+
 
     }
 }

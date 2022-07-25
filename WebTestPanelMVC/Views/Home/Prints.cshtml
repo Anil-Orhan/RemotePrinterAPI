@@ -1,0 +1,46 @@
+﻿@model AllListModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@*PRINT MODEL TABLE*@
+
+<div class="row">
+    
+    <div class="col-10"><h1 class="display-4 text-center fs-5 fw-bold">PRINTS</h1>
+        <table class="table table-bordered table-dark m-3 p-2">
+            <thead>
+            <tr>
+                   
+                <th scope="col">ID</th>
+                <th scope="col">USER ID</th>
+                <th scope="col">PRINTER ID </th>
+                <th scope="col">FILE ID </th>
+                <th scope="col">DATE</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.PrintModels)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.UserId</td>
+                    <td>@item.PrinterId</td>
+                    <td>@item.FileId</td>
+                    <td>@item.Date</td>
+                
+
+                </tr>
+            }
+       
+            </tbody>
+        </table>
+    
+    </div>
+
+
+</div>
+

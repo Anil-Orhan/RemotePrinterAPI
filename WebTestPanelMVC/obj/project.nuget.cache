@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bSQCXi2+4KGvQhZUsm6JaRmLOu2u6HjHQx4gDz0GnVx8MIjBiRJmzfawcxIhATKXh7u3Z8H1PtFGdQjSeZM7kg==",
+  "dgSpecHash": "RX3Pd154I36gjM7zbez7daVPLGaMUq2ADWHqehLbXWC34gszA3V9OxMgFYRbDO1mXBnx97MCFy1n8tAGNeh+Jw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Vodases\\source\\repos\\UploadPrj\\WebTestPanelMVC\\WebTestPanelMVC.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\Vodases\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Vodases\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Vodases\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Vodases\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
     "C:\\Users\\Vodases\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Vodases\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\Vodases\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

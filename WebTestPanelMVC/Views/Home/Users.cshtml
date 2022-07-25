@@ -1,0 +1,41 @@
+﻿@model AllListModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+
+@*USERS TABLE*@
+
+<div class="row">
+    
+    <div class="col-10"><h1 class="display-4 text-center fs-5 fw-bold">Active Users</h1>
+        <table class="table table-bordered m-3 p-2 table-dark">
+            <thead>
+            <tr>
+                   
+                <th scope="col">Full Name</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">User Name </th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Users)
+            {
+                <tr>
+                    <td>@item.name @item.lastName</td>
+                    <td>@item.phoneNumber</td>
+                    <td>@item.userName</td>
+                
+
+                </tr>
+            }
+       
+            </tbody>
+        </table>
+    
+    </div>
+
+
+</div>
