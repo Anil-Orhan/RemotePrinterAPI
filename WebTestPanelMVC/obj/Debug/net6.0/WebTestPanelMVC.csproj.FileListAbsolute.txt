@@ -1,4 +1,3 @@
-C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\wwwroot\js\.eslintrc.json
 C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\AdminLTE-master\.bundlewatch.config.json
 C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\AdminLTE-master\.eslintrc.json
 C:\Users\Vodases\source\repos\UploadPrj\WebTestPanelMVC\bin\Debug\net6.0\AdminLTE-master\composer.json

@@ -5,4 +5,53 @@
     Layout = "_Layout";
 }
 
-<h2>title</h2>
+
+<div class="row">
+    
+    <div class="col-12 m-1 p-2"><h1 class="display-4 text-center fs-5 fw-bold">Wallet Activities</h1>
+        <table class="table table-striped table-bordered table-dark table-hover m-3 p-2">
+            <thead>
+            <tr>
+                   
+                <th scope="col">ID</th>
+                <th scope="col">USER ID </th>
+                <th scope="col"> AMOUNT</th>
+                <th scope="col"> PREV. BALANCE</th>
+                <th scope="col"> NEW BALANCE</th>
+                <th scope="col"> TYPE</th>
+
+             
+                
+
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.WalletActivities)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.UserId</td>
+                    <td>@item.Amount</td>
+                    <td>@item.PreviousBalance</td>
+                    <td>@item.NewBalance</td>
+                    <td>@item.OperationType</td>
+
+                   
+                    
+                   
+                  
+                   
+
+                
+
+                </tr>
+            }
+       
+            </tbody>
+        </table>
+    
+    </div>
+
+
+</div>
+

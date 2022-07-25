@@ -7,12 +7,11 @@
 
 @*FILES TABLE*@
 <div class="row">
-    
-    <div class="col-12"><h1 class="display-4 text-center fs-1 fw-bolder mt-4 mb-4 fw-bold">Files</h1>
+<div class="col-10"><h1 class="display-1 text-center fs-6 fw-bold">PRINTS</h1>
        
-        <table class="table table-bordered table-dark fs-5">
+        <table  class="table table-bordered table-dark table-hover fs-6  p-2">
             <thead>
-            <tr>
+            <tr style="font-size: smaller">
                
                 <th scope="col">ID</th>
                 <th scope="col">User ID</th>
@@ -29,17 +28,18 @@
             <tbody>
             @foreach (var item in Model.Files)
             {
-                <tr>
+                <tr style="font-size:xx-small">
                    
                     <td>@item.Id</td>
                     <td>@item.UserId</td>
-                    <td>@item.FileUrl</td>
-                    <td>@item.CloudUrl</td>
+                    <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;">@item.FileUrl</td>
+                    <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;">@item.CloudUrl</td>
                     <td>@item.FileName</td>
                     <td>@item.FileExtension</td>
                     <td>@item.FileSize</td>
                     <td>@item.CreateDate</td>
                     <td>@item.OperationId</td>
+                    
 
 
                     
@@ -51,6 +51,5 @@
             </tbody>
         </table>
         
-    </div>
-   
-</div>
+
+</div></div>

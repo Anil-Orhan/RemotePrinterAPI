@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "exFIxE94dHJ49MQ6i8VgRzn52l8nX/r4T9RhaNrrj+s=",
+  "Hash": "yn/IkaL7pGc9MK4rR8wMAER6OQGq08a8+gdDRhlIXj4=",
   "Source": "WebTestPanelMVC",
   "BasePath": "_content/WebTestPanelMVC",
   "Mode": "Default",
@@ -3208,9 +3208,26 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\.eslintrc.json"
+    },
+    {
+      "Identity": "C:\\Users\\Vodases\\source\\repos\\UploadPrj\\WebTestPanelMVC\\wwwroot\\js\\pages\\dashboard.js",
+      "SourceId": "WebTestPanelMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Vodases\\source\\repos\\UploadPrj\\WebTestPanelMVC\\wwwroot\\",
+      "BasePath": "_content/WebTestPanelMVC",
+      "RelativePath": "js/pages/dashboard.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\pages\\dashboard.js"
     },
     {
       "Identity": "C:\\Users\\Vodases\\source\\repos\\UploadPrj\\WebTestPanelMVC\\wwwroot\\js\\site.js",

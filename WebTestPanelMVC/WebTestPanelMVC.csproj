@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\js\pages\dashboard.js" />
+    <Content Remove="wwwroot\js\adminlte.js" />
+    <Content Remove="wwwroot\js\adminlte.js.map" />
+    <Content Remove="wwwroot\js\adminlte.min.js" />
+    <Content Remove="wwwroot\js\adminlte.min.js.map" />
+    <Content Remove="wwwroot\js\demo.js" />
     <Content Remove="wwwroot\js\pages\dashboard2.js" />
     <Content Remove="wwwroot\js\pages\dashboard3.js" />
   </ItemGroup>
@@ -2273,7 +2277,8 @@
 
   <ItemGroup>
     <Content Update="wwwroot\js\.eslintrc.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
   </ItemGroup>
 
