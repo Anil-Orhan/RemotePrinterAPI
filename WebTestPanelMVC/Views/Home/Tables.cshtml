@@ -6,14 +6,48 @@
 }
 
 
+<div class="row">
     
-    <h1 class="fs-1 text-center">Tables</h1>
+    <div class="col-12"><h1 class="display-4 text-center fs-5 fw-bold">Printers</h1>
+        <table class="table table-bordered table-dark table-hover  m-3 p-2">
+            <thead>
+            <tr>
+               
+                <th scope="col">ID</th>
+                <th scope="col">User Name</th>
+                <th scope="col">Printer </th>
+                <th scope="col">PrinterIP </th>
+                <th scope="col">File Name </th>
+                <th scope="col">File Size (MB) </th>
+                <th scope="col">Date </th>
+                <th scope="col">Operation ID </th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.PrintModels)
+            {
+                <tr>
+                   
+                    <td>@item.Id</td>
+                    <td>@Model.Users.FirstOrDefault(p=>p.id==@item.UserId).userName</td>
+                    <td>@Model.Printers.FirstOrDefault(p=>p.Id==@item.PrinterId).Brand - @Model.Printers.FirstOrDefault(p=>p.Id==@item.PrinterId).Model </td>
+                    <td>@Model.Printers.FirstOrDefault(p=>p.Id==@item.PrinterId).PrinterIP</td>
+                    <td>@Model.Files.FirstOrDefault(p=>p.Id==@item.FileId).FileName</td>
+                    <td>@Model.Files.FirstOrDefault(p=>p.Id==@item.FileId).FileSize</td>
+                    <td>@item.Date</td>
+                    <td>@item.OperationId</td>
+
+
+                </tr>
+            }
+       
+            </tbody>
+        </table>
     
+    </div>
+   
+</div>
 
-    <hr class="dashed"/>
-  
-
- 
 
 
 
