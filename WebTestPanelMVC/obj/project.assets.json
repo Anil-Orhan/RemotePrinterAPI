@@ -372,6 +372,9 @@
           }
         }
       },
+      "Prettify/3.3.4.2013": {
+        "type": "package"
+      },
       "QRCoder/1.4.3": {
         "type": "package",
         "compile": {
@@ -1341,6 +1344,52 @@
         "version.txt"
       ]
     },
+    "Prettify/3.3.4.2013": {
+      "sha512": "FahbE6ue/M7B3s7BMEupkIozu7Z4TkagH8FkFyIlI6HUIFmdSopoqm07R9L2z7iUV7W78BqUcXB01MwPPgO+vQ==",
+      "type": "package",
+      "path": "prettify/3.3.4.2013",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Content/Prettify/Themes/desert.css",
+        "content/Content/Prettify/Themes/doxy.css",
+        "content/Content/Prettify/Themes/sons-of-obsidian.css",
+        "content/Content/Prettify/Themes/sunburst.css",
+        "content/Content/Prettify/prettify.css",
+        "content/Scripts/Prettify/lang-apollo.js",
+        "content/Scripts/Prettify/lang-basic.js",
+        "content/Scripts/Prettify/lang-clj.js",
+        "content/Scripts/Prettify/lang-css.js",
+        "content/Scripts/Prettify/lang-dart.js",
+        "content/Scripts/Prettify/lang-erlang.js",
+        "content/Scripts/Prettify/lang-go.js",
+        "content/Scripts/Prettify/lang-hs.js",
+        "content/Scripts/Prettify/lang-lisp.js",
+        "content/Scripts/Prettify/lang-llvm.js",
+        "content/Scripts/Prettify/lang-lua.js",
+        "content/Scripts/Prettify/lang-matlab.js",
+        "content/Scripts/Prettify/lang-ml.js",
+        "content/Scripts/Prettify/lang-mumps.js",
+        "content/Scripts/Prettify/lang-n.js",
+        "content/Scripts/Prettify/lang-pascal.js",
+        "content/Scripts/Prettify/lang-proto.js",
+        "content/Scripts/Prettify/lang-r.js",
+        "content/Scripts/Prettify/lang-rd.js",
+        "content/Scripts/Prettify/lang-scala.js",
+        "content/Scripts/Prettify/lang-sql.js",
+        "content/Scripts/Prettify/lang-tcl.js",
+        "content/Scripts/Prettify/lang-tex.js",
+        "content/Scripts/Prettify/lang-vb.js",
+        "content/Scripts/Prettify/lang-vhdl.js",
+        "content/Scripts/Prettify/lang-wiki.js",
+        "content/Scripts/Prettify/lang-xq.js",
+        "content/Scripts/Prettify/lang-yaml.js",
+        "content/Scripts/Prettify/prettify.js",
+        "content/Scripts/Prettify/run_prettify.js",
+        "prettify.3.3.4.2013.nupkg.sha512",
+        "prettify.nuspec"
+      ]
+    },
     "QRCoder/1.4.3": {
       "sha512": "fWuFqjm8GTlEb2GqBl3Hi8HZZeZQwBSHxvRPtPjyNbT82H0ff0JwavKRBmMaXCno1Av6McPC8aJzri0Mj2w9Jw==",
       "type": "package",
@@ -1870,6 +1919,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "EntityLayer >= 1.0.0",
+      "Prettify >= 3.3.4.2013",
       "QRCoder >= 1.4.3",
       "ServiceLayer >= 1.0.0"
     ]
@@ -1925,6 +1975,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Prettify": {
+            "target": "Package",
+            "version": "[3.3.4.2013, )"
+          },
           "QRCoder": {
             "target": "Package",
             "version": "[1.4.3, )"

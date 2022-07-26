@@ -317,6 +317,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Prettify": {
+              "target": "Package",
+              "version": "[3.3.4.2013, )"
+            },
             "QRCoder": {
               "target": "Package",
               "version": "[1.4.3, )"

@@ -9,6 +9,7 @@
       "WebTestPanelMVC/1.0.0": {
         "dependencies": {
           "EntityLayer": "1.0.0",
+          "Prettify": "3.3.4.2013",
           "QRCoder": "1.4.3",
           "ServiceLayer": "1.0.0"
         },
@@ -268,6 +269,7 @@
           }
         }
       },
+      "Prettify/3.3.4.2013": {},
       "QRCoder/1.4.3": {
         "runtime": {
           "lib/net6.0/QRCoder.dll": {
@@ -638,6 +640,13 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "Prettify/3.3.4.2013": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FahbE6ue/M7B3s7BMEupkIozu7Z4TkagH8FkFyIlI6HUIFmdSopoqm07R9L2z7iUV7W78BqUcXB01MwPPgO+vQ==",
+      "path": "prettify/3.3.4.2013",
+      "hashPath": "prettify.3.3.4.2013.nupkg.sha512"
     },
     "QRCoder/1.4.3": {
       "type": "package",

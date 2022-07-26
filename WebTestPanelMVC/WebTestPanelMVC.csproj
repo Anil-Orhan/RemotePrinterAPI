@@ -29,6 +29,7 @@
     <_ContentIncludedByDefault Remove="Pages\Printers\Index.cshtml" />
     <_ContentIncludedByDefault Remove="Views\Home\Operations.cshtml" />
     <_ContentIncludedByDefault Remove="Views\Home\Prints.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\PrintTest.cshtml" />
     <_ContentIncludedByDefault Remove="Views\Home\Users.cshtml" />
   </ItemGroup>
 
@@ -2266,6 +2267,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Prettify" Version="3.3.4.2013" />
     <PackageReference Include="QRCoder" Version="1.4.3" />
   </ItemGroup>
 
@@ -2292,6 +2294,10 @@
 
   <ItemGroup>
     <UpToDateCheckInput Remove="Views\Home\Operations.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Home\PrintTest.cshtml" />
   </ItemGroup>
 
 </Project>
