@@ -41,16 +41,23 @@ namespace ClientSocket
 
         private void btnDosyaSec_Click(object sender, EventArgs e)
         {
-            var saveDirectory = Application.StartupPath.Replace("bin\\Debug", "Folders");
+
+
+            var saveDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Files");
             using (var openFileDialog1 = new OpenFileDialog())
             {
                 if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    if (!Directory.Exists(saveDirectory)) Directory.CreateDirectory(saveDirectory);
-                     fileName = Path.GetFileName(openFileDialog1.FileName);
+
+
+                    File.Copy(openFileDialog1.FileName,Path.Combine(@"C:\Users\Vodases\source\repos\UploadPrj\ClientSocket\Files",
+                        Path.GetFileName(openFileDialog1.SafeFileName)),true);
+
+
+                    fileName = Path.GetFileName(openFileDialog1.FileName);
                     var fileSavePath = Path.Combine(saveDirectory, fileName);
-                    File.Copy(openFileDialog1.FileName, fileSavePath, true);
-                    str = fileSavePath  ;
+                    //File.Copy(openFileDialog1.FileName, fileSavePath, true);
+                    str = fileSavePath;
                     MessageBox.Show("Dosya Yüklendi");
                    
                 }
