@@ -34,9 +34,7 @@ namespace ClientSocket
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         { // Create an instance of the Printer
-            IPrinter printer = new Printer();
-            // Print the file
-            printer.PrintRawFile(printerName, filePath, fileName);
+       
         }
 
         private void btnDosyaSec_Click(object sender, EventArgs e)
@@ -100,7 +98,9 @@ namespace ClientSocket
         {
 
 
-            printDocument1.Print();
+            IPrinter printer = new Printer();
+            // Print the file
+            printer.PrintRawFile(printerName, "C:\\demo.txt", "demo");
 
         }
 
