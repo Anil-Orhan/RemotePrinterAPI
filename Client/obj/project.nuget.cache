@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "fwk5Oc80Byz4rcTBb7zgIb2sbasvhhImtTEKDyTdF62ApYxbAqCEwUv4NdS8k8n70wSFU/LfgXXvBb6SH3UNMA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Vodases\\source\\repos\\UploadPrj\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vodases\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.3\\microsoft.aspnet.signalr.client.2.4.3.nupkg.sha512",
+    "C:\\Users\\Vodases\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Vodases\\.nuget\\packages\\rawprint\\0.5.0\\rawprint.0.5.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'RawPrint 0.5.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "RawPrint",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}

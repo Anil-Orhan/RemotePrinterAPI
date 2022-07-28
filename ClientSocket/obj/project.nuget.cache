@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "WhrHccBeo1MfxuZHKiDoDRt3BrsaMQoesIpzyu0PCiwr31oA6/o+Raj9watECoBAy3fkGVdn3Qc/NtlCGRgvTA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Vodases\\source\\repos\\UploadPrj\\ClientSocket\\ClientSocket.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vodases\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.3\\microsoft.aspnet.signalr.client.2.4.3.nupkg.sha512",
+    "C:\\Users\\Vodases\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512",
+    "C:\\Users\\Vodases\\.nuget\\packages\\rawprint.netstd-2.0\\1.0.0\\rawprint.netstd-2.0.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -127,13 +127,62 @@ namespace WebTestPanelMVC.Controllers
           
 
            
-                
-
+            
                 return View(_model);
             
 
             
         }
+        //[HttpPost("fileUpload")]
+
+        //public async Task<IActionResult> PrintTest(List<IFormFile> files)
+        //{
+
+        //    var size = files.Sum(f => f.Length);
+        //    var filePaths = new List<string>();
+        //    foreach (var formFile in files)
+        //    {
+        //        if (formFile.Length > 0)
+        //        {
+        //            var filePath = Path.Combine(Directory.GetCurrentDirectory(), formFile.FileName);
+        //            filePaths.Add(filePath);
+
+        //            using (var stream = new FileStream(filePath, FileMode.Create))
+        //            {
+        //                await formFile.CopyToAsync(stream);
+        //            }
+        //        }
+        //    }
+
+        //    return Ok(new { files.Count, size, filePaths });
+
+        //}
+
+        //public void Send(string file)
+        //{
+        //    using (var process = new Process())
+        //    {
+        //        process.StartInfo.FileName = @"C:\Users\Vodases\Desktop\Printerapo_Api\clientsocket\bin\Debug\clientsocket.exe";
+        //        process.StartInfo.Arguments = $"{file}";
+        //        //process.StartInfo.FileName = @"cmd.exe";
+        //        //process.StartInfo.Arguments = @"/c dir";     
+        //        process.StartInfo.CreateNoWindow = true;
+        //        process.StartInfo.UseShellExecute = false;
+        //        process.StartInfo.RedirectStandardOutput = true;
+        //        process.StartInfo.RedirectStandardError = true;
+
+        //        process.OutputDataReceived += (sender, data) => Console.WriteLine(data.Data);
+        //        process.ErrorDataReceived += (sender, data) => Console.WriteLine(data.Data);
+        //        Console.WriteLine("starting");
+        //        process.Start();
+        //        process.BeginOutputReadLine();
+        //        process.BeginErrorReadLine();
+        //        var exited = process.WaitForExit(1000 * 10);
+        //        Console.WriteLine($"exit {exited}");
+        //    }
+
+        //    // Clients.All.SendAsync("OnMessage", file);
+        //}
 
     }
 }
