@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,6 +23,7 @@ namespace ClientSocket
         private string fileName;
         private string printerName;
         IHubProxy _hubProxy;
+        
         public Form1()
         {
            
@@ -92,21 +94,31 @@ namespace ClientSocket
             // Clients.All.SendAsync("OnMessage", file);
         }
 
-     
+        public async Task<string> GetLastFileLocation()
+        {
+            var client = new HttpClient();
+            client.BaseAddress = new Uri("https://localhost:7106/");
+            HttpResponseMessage response = await client.GetAsync("api/File/getlastfile");
+            var result=await response.Content.ReadAsStringAsync();
+            label1.Text= result;
+            return result;
+        }
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-
+            GetLastFileLocation();
 
             IPrinter printer = new Printer();
             // Print the file
             printer.PrintRawFile(printerName, "C:\\demo.txt", "demo");
 
+            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+         
         }
         private void HubConnection_StateChanged(StateChange obj)
         {

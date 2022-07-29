@@ -38,6 +38,16 @@ namespace UploadPrj.Controllers
             }
             return BadRequest(result);
         }
+        [HttpGet("getlastfile")]
+        public IActionResult GetBGetLastFileyId()
+        {
+            var result = _fileService.GetAll().Last();
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
 
         [HttpPost("add")]
         public IActionResult Add(EntityLayer.Concrete.File file)

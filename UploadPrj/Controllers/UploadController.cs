@@ -12,7 +12,7 @@ using File = EntityLayer.Concrete.File;
 
 namespace UploadPrj.Controllers
 {
-    
+    [Route("api/[controller]")]
     [ApiController]
     public class UploadController : ControllerBase
     {
@@ -96,12 +96,48 @@ namespace UploadPrj.Controllers
                 }
 
         }
+        //public void Send(string file)
+        //{
+        //    using (var process = new Process())
+        //    {
+        //        process.StartInfo.FileName = @"C:\Users\Vodases\Desktop\Printerapo_Api\clientsocket\bin\Debug\clientsocket.exe";
+        //        process.StartInfo.Arguments = $"{file}";
+        //        //process.StartInfo.FileName = @"cmd.exe";
+        //        //process.StartInfo.Arguments = @"/c dir";     
+        //        process.StartInfo.CreateNoWindow = true;
+        //        process.StartInfo.UseShellExecute = false;
+        //        process.StartInfo.RedirectStandardOutput = true;
+        //        process.StartInfo.RedirectStandardError = true;
 
-            public void Send(string file)
+        //        process.OutputDataReceived += (sender, data) => Console.WriteLine(data.Data);
+        //        process.ErrorDataReceived += (sender, data) => Console.WriteLine(data.Data);
+        //        Console.WriteLine("starting");
+        //        process.Start();
+        //        process.BeginOutputReadLine();
+        //        process.BeginErrorReadLine();
+        //        var exited = process.WaitForExit(1000 * 10);
+        //        Console.WriteLine($"exit {exited}");
+        //    }
+
+
+        //    // Clients.All.SendAsync("OnMessage", file);
+        //}
+
+        [HttpPost("printFile")]
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> PrintFile(IFormFile file, CancellationToken cancellationToken)
+        {
+            Send(file.FileName);
+
+            return Ok();
+
+            void Send(string file)
             {
                 using (var process = new Process())
                 {
-                    process.StartInfo.FileName = @"C:\Users\Vodases\Desktop\Printerapo_Api\clientsocket\bin\Debug\clientsocket.exe";
+                    process.StartInfo.FileName = @"C:\Users\Vodases\source\repos\UploadPrj\ClientSocket\bin\Debug\ClientSocket.exe";
                     process.StartInfo.Arguments = $"{file}";
                     //process.StartInfo.FileName = @"cmd.exe";
                     //process.StartInfo.Arguments = @"/c dir";     
@@ -120,10 +156,58 @@ namespace UploadPrj.Controllers
                     Console.WriteLine($"exit {exited}");
                 }
 
+
                 // Clients.All.SendAsync("OnMessage", file);
             }
+
+        }
+
+
 
 
     }
 
+
+
+
+
 }
+
+
+
+
+//public void Send(string file)
+//{
+//    using (var process = new Process())
+//    {
+//        process.StartInfo.FileName = @"C:\Users\Vodases\Desktop\Printerapo_Api\clientsocket\bin\Debug\clientsocket.exe";
+//        process.StartInfo.Arguments = $"{file}";
+//        //process.StartInfo.FileName = @"cmd.exe";
+//        //process.StartInfo.Arguments = @"/c dir";     
+//        process.StartInfo.CreateNoWindow = true;
+//        process.StartInfo.UseShellExecute = false;
+//        process.StartInfo.RedirectStandardOutput = true;
+//        process.StartInfo.RedirectStandardError = true;
+
+//        process.OutputDataReceived += (sender, data) => Console.WriteLine(data.Data);
+//        process.ErrorDataReceived += (sender, data) => Console.WriteLine(data.Data);
+//        Console.WriteLine("starting");
+//        process.Start();
+//        process.BeginOutputReadLine();
+//        process.BeginErrorReadLine();
+//        var exited = process.WaitForExit(1000 * 10);
+//        Console.WriteLine($"exit {exited}");
+//    }
+
+//    // Clients.All.SendAsync("OnMessage", file);
+//}
+
+
+
+// Clients.All.SendAsync("OnMessage", file);
+
+
+
+
+
+

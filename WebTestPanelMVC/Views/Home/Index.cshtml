@@ -17,8 +17,8 @@
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">Dashboard</li>
+                    <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                    <li class="breadcrumb-item active">Gösterge Paneli</li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -37,12 +37,12 @@
                     <div class="inner">
                         <h3>@Model.PrintModels.Count</h3>
 
-                        <p>Print Quantity</p>
+                        <p>Yazdırma Adedi</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="#" class="small-box-footer">Daha Fazla <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -53,12 +53,12 @@
                         <h3>
                             @Model.Wallets.OrderBy(p=>p.Balance>0).Select(p=>p.Balance).Sum() <sup style="font-size: 20px">₺</sup></h3>
 
-                        <p>Total Wallet Balance </p>
+                        <p>Toplam Cüzdan Bakiyesi </p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="#" class="small-box-footer">Daha Fazla <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -69,12 +69,12 @@
                         @{ var userCount = Model.Users.Count;}
                         <h3>@userCount</h3>
 
-                        <p>Registered User</p>
+                        <p>Kayıtlı Kullanıcı</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="#" class="small-box-footer">Daha Fazla <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -84,12 +84,12 @@
                     <div class="inner">
                         <h3> @Model.Files.OrderBy(p=>p.FileSize>0).Select(p=>p.FileSize).Sum() Mb</h3>
 
-                        <p> Total data on the server</p>
+                        <p>Veri Boyutu</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="#" class="small-box-footer">Daha Fazla <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -105,7 +105,7 @@
     <!-- TABLE: LATEST OPERATIONS -->
 <div class="card">
     <div class="card-header border-transparent">
-        <h3 class="card-title">Latest Operations</h3>
+        <h3 class="card-title">Son Operasyonlar</h3>
 
         <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -122,10 +122,10 @@
             <table class="table m-0">
                 <thead>
                 <tr>
-                    <th>Order ID</th>
-                    <th>Total Price</th>
-                    <th>Status</th>
-                    <th>User</th>
+                    <th>Sipariş ID</th>
+                    <th>Toplam Fiyat</th>
+                    <th>Durum</th>
+                    <th>Kullanıcı</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -158,8 +158,8 @@
     </div>
     <!-- /.card-body -->
     <div class="card-footer clearfix">
-        <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-left">Place New Operations</a>
-        <a asp-controller="Home" asp-action="Operations"  class="btn btn-sm btn-info float-right  "><i class="fa-solid fa-eye"></i> View All Operation</a>
+        <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-left">Yeni Operasyon Ekle</a>
+        <a asp-controller="Home" asp-action="Operations"  class="btn btn-sm btn-info float-right  "><i class="fa-solid fa-eye"></i> Tüm Operasyonları Görüntüle</a>
     </div>
     <!-- /.card-footer -->
 </div>
@@ -176,7 +176,7 @@
                           <div class="card">
             <div class="card-header">
                 <h3 class="card-title">
-                    Most preferred printers</h3>
+                    En Çok Tercih Edilen Yazıcılar</h3>
 
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -214,7 +214,7 @@
             </div>
             <!-- /.card-body -->
             <div class="card-footer text-center">
-                <a asp-controller="Home" asp-action="Printers" class="uppercase">View All Printers</a>
+                <a asp-controller="Home" asp-action="Printers" class="uppercase">Tüm Yazıcıları Görüntüle</a>
             </div>
             <!-- /.card-footer -->
 
@@ -237,7 +237,7 @@
                 <span class="info-box-icon"><i class="fa-solid fa-coins"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Earning</span>
+                    <span class="info-box-text">Kazanç</span>
                     @{ var Earing = @Model.Options.OrderBy(p => p.Amount > 0).Select(p => p.Amount).Sum();}
                     <span class="info-box-number"> @Earing -  <i class="fa-solid fa-turkish-lira-sign"></i> </span>
                 </div>
@@ -249,7 +249,7 @@
 
                 <div class="info-box-content">
                 <span class="info-box-text">
-                    Members today</span>
+                    Son 24 Saatte Kayıt Olan Kullancı</span>
                 @{
                     var yesterday = DateTime.Now.AddDays(-1);
                  
@@ -266,7 +266,7 @@
 
                 <div class="info-box-content">
                     <span class="info-box-text">
-                        Average earnings per user</span>@{ var perUser = Earing / userCount;}
+                       Kullanıcı Başına Ortalama Kazanç</span>@{ var perUser = Earing / userCount;}
                     <span class="info-box-number">@perUser -  <i class="fa-solid fa-turkish-lira-sign"></i></span>
                 </div>
                 <!-- /.info-box-content -->
