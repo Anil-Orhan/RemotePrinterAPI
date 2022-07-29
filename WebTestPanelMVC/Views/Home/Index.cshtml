@@ -13,7 +13,7 @@
     <div class="container-fluid ">
         <div class="row mb-2 ">
             <div class="col-sm-6">
-                <h1 class="m-0">Dashboard</h1>
+                <h1 class="m-0">Gösterge Paneli</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -238,8 +238,10 @@
 
                 <div class="info-box-content">
                     <span class="info-box-text">Kazanç</span>
-                    @{ var Earing = @Model.Options.OrderBy(p => p.Amount > 0).Select(p => p.Amount).Sum();}
-                    <span class="info-box-number"> @Earing -  <i class="fa-solid fa-turkish-lira-sign"></i> </span>
+                            @{
+                                var Earing = Math.Round(@Model.Options.OrderBy(p => p.Amount > 0).Select(p => p.Amount).Sum(), 2);
+                            }
+                            <span class="info-box-number"> @Earing -  <i class="fa-solid fa-turkish-lira-sign"></i> </span>
                 </div>
                 <!-- /.info-box-content -->
             </div>
@@ -266,7 +268,7 @@
 
                 <div class="info-box-content">
                     <span class="info-box-text">
-                       Kullanıcı Başına Ortalama Kazanç</span>@{ var perUser = Earing / userCount;}
+                       Kullanıcı Başına Ortalama Kazanç</span>@{ var perUser =Math.Round (Earing / userCount,2);}
                     <span class="info-box-number">@perUser -  <i class="fa-solid fa-turkish-lira-sign"></i></span>
                 </div>
                 <!-- /.info-box-content -->

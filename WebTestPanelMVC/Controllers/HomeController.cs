@@ -6,7 +6,7 @@ using QRCoder;
 using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
-
+using UploadPrj.Controllers;
 
 namespace WebTestPanelMVC.Controllers
 {
@@ -124,15 +124,25 @@ namespace WebTestPanelMVC.Controllers
        
         public  IActionResult PrintTest()
         {
-          
 
            
-            
-                return View(_model);
+
+            return View(_model);
             
 
             
         }
+
+        [HttpPost]
+        public async void test()
+        {
+            var client = new HttpClient();
+            client.BaseAddress = new Uri("https://localhost:7106/");
+            HttpResponseMessage response = await client.GetAsync("api/Upload/printFile");
+        }
+
+        public ActionResult TestAction() { test(); return null;   }
+
         //[HttpPost("fileUpload")]
 
         //public async Task<IActionResult> PrintTest(List<IFormFile> files)
