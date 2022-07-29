@@ -219,25 +219,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vodases\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Vodases\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vodases\\source\\repos\\UploadPrj\\ClientSocket\\ClientSocket.csproj",
+      "projectUniqueName": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\ClientSocket\\ClientSocket.csproj",
       "projectName": "ClientSocket",
-      "projectPath": "C:\\Users\\Vodases\\source\\repos\\UploadPrj\\ClientSocket\\ClientSocket.csproj",
+      "projectPath": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\ClientSocket\\ClientSocket.csproj",
       "packagesPath": "C:\\Users\\Vodases\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vodases\\source\\repos\\UploadPrj\\ClientSocket\\obj\\",
+      "outputPath": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\ClientSocket\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\Vodases\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

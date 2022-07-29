@@ -31,6 +31,7 @@ namespace UploadPrj.Controllers
         public async Task<IActionResult> UploadFile(IFormFile file, CancellationToken cancellationToken)
         {
             await WriteFile(file);
+
           
             return Ok();
 
@@ -127,18 +128,18 @@ namespace UploadPrj.Controllers
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> PrintFile(IFormFile file, CancellationToken cancellationToken)
+        public async Task<IActionResult> PrintFile(CancellationToken cancellationToken)
         {
-            Send(file.FileName);
+            Send();
 
             return Ok();
 
-            void Send(string file)
+            void Send()
             {
                 using (var process = new Process())
                 {
-                    process.StartInfo.FileName = @"C:\Users\Vodases\source\repos\UploadPrj\ClientSocket\bin\Debug\ClientSocket.exe";
-                    process.StartInfo.Arguments = $"{file}";
+                    process.StartInfo.FileName = @"C:\Users\Vodases\Desktop\PrintOmiGuncel\backend\ClientSocket\bin\Debug\ClientSocket.exe";
+                    process.StartInfo.Arguments = $"";
                     //process.StartInfo.FileName = @"cmd.exe";
                     //process.StartInfo.Arguments = @"/c dir";     
                     process.StartInfo.CreateNoWindow = true;
