@@ -73,4 +73,22 @@ public class OperationService:IOperationService
 
         }
     }
+
+    public double TotalExpense(Guid id)
+    {
+      var operationList=  _operationDal.GetAll(p => p.UserId == id);
+
+       var result= operationList.Sum(p=>p.TotalAmount);
+        return result;
+    }
+
+    public int TotalProcessWithDate(Guid id,int day)
+    {
+        if(day == 0 || day == null) { day = 1000; }
+
+        var operationList = _operationDal.GetAll(p => p.UserId == id&&p.OperationTime>=DateTime.Now.AddDays(-day));
+
+        var result = operationList.Count;
+        return result;
+    }
 }

@@ -83,13 +83,14 @@ namespace UploadPrj.Controllers
                 {
                     Printer printer = new Printer { Id = Guid.Parse("3fa85f64-5717-4562-b3fc-2c963f66afa6"), Brand = null, PrinterName = null, Model = null, Coordinate = "null", PrinterIP = null };
                     Option option = new Option() { Colorless = 3, Colored = 5, PageNumber = 5, Amount = 15 };
-                    if (StaticValues.ActiveUser==null)
+                    if (StaticValues.ActiveUser!=null)
                     {
                         throw new Exception("There is no user logged into the system!") {  };
                     }
                     else
                     {
-                    OptionControllerEntityDto optionController = new OptionControllerEntityDto { User = StaticValues.ActiveUser, Files = files, Printer = printer, Option = option };
+                    User user = new User { name = "Burhan", lastName = "Akbaba" };
+                    OptionControllerEntityDto optionController = new OptionControllerEntityDto { User = /*StaticValues.ActiveUser*/ user, Files = files, Printer = printer, Option = option };
                     return optionController;
                 }
                     
@@ -124,7 +125,7 @@ namespace UploadPrj.Controllers
         //    // Clients.All.SendAsync("OnMessage", file);
         //}
 
-        [HttpPost("printFile")]
+        [HttpGet("printFile")]
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
@@ -138,7 +139,7 @@ namespace UploadPrj.Controllers
             {
                 using (var process = new Process())
                 {
-                    process.StartInfo.FileName = @"C:\Users\Vodases\Desktop\PrintOmiGuncel\backend\ClientSocket\bin\Debug\ClientSocket.exe";
+                    process.StartInfo.FileName = @"C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\ClientSocket\bin\Debug\ClientSocket.exe";
                     process.StartInfo.Arguments = $"";
                     //process.StartInfo.FileName = @"cmd.exe";
                     //process.StartInfo.Arguments = @"/c dir";     

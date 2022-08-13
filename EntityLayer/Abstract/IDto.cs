@@ -8,5 +8,6 @@ namespace EntityLayer.Abstract
 {
     public interface IDto
     {
+      
     }
 }

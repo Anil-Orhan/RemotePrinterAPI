@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\EntityLayer\\EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\EntityLayer\\EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\EntityLayer\\EntityLayer.csproj",
+      "projectPath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\EntityLayer\\EntityLayer.csproj",
       "packagesPath": "C:\\Users\\Vodases\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\EntityLayer\\obj\\",
+      "outputPath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vodases\\AppData\\Roaming\\NuGet\\NuGet.Config",

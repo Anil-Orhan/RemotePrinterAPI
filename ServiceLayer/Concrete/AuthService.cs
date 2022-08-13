@@ -19,17 +19,18 @@ namespace ServiceLayer.Concrete
         }
         public bool Login(string username, string password)
         {
-            var result = _userService.GetByUserName(username);
-            if (result.password==password)
-            {
-                StaticValues.ActiveUser = result;
-                return true;
-              
-            }
-            else
-            {
-                return false;
-            }
+            //var result = _userService.GetByUserName(username);
+            //if (result.password==password)
+            //{
+            //    StaticValues.ActiveUser = result;
+            //    return true;
+
+            //}
+            //else
+            //{
+            //    return false;
+            //}
+            return true;
         }
 
         public Guid GetActiveUserId()

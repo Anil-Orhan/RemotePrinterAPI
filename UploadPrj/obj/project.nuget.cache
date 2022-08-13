@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D8IXxq0KDQG2qV0qzLG0xLbgOi+pioouh18BnC7ZvkmldNCsyITRWfEgV6dFLUMrgRTsNQK1Rmxa3KByMCWkVw==",
+  "dgSpecHash": "tYrvOFuT6XX/3flzC2bSevzsGgY2Vb5xUTYs7j9pNyM7N3YjSt4jdm+iJyzmkNIZ3jtFjK7gu7w8PKxRjgJbvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\UploadPrj\\UploadPrj.csproj",
+  "projectFilePath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\UploadPrj\\UploadPrj.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vodases\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Vodases\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

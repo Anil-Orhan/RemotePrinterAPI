@@ -8,81 +8,81 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebTestPanelMVC
 build_property.RootNamespace = WebTestPanelMVC
-build_property.ProjectDir = C:\Users\Vodases\Desktop\PrintOmiGuncel\backend\WebTestPanelMVC\
+build_property.ProjectDir = C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\WebTestPanelMVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Vodases\Desktop\PrintOmiGuncel\backend\WebTestPanelMVC
+build_property.MSBuildProjectDirectory = C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\WebTestPanelMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Pages/Printers/Index.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Pages/Printers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbnRlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Home/Files.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Home/Files.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGaWxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Home/Index.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Home/Logs.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Home/Logs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Home/Operations.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Home/Operations.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcGVyYXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Home/Options.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Home/Options.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcHRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Home/Printers.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Home/Printers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcmludGVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Home/Prints.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Home/Prints.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcmludHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Home/PrintTest.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Home/PrintTest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcmludFRlc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Home/Tables.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Home/Tables.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUYWJsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Home/Users.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Home/Users.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Home/WalletActivities.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Home/WalletActivities.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXYWxsZXRBY3Rpdml0aWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Home/Wallets.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Home/Wallets.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXYWxsZXRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Shared/Error.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/_ViewImports.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/_ViewStart.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Vodases/Desktop/PrintOmiGuncel/backend/WebTestPanelMVC/Views/Shared/_Layout.cshtml]
+[C:/Users/Vodases/Desktop/printOmiGuncel1652/backend/WebTestPanelMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-10ec3sijoc

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tQZeNYvtEYIcx1nu2lUduN0MTvP4vdI8uMLwH5vDs1V3CvQrFRYPMrh8Wn7Zx8iiS/BNnUIXdkcSjANv+jbTOQ==",
+  "dgSpecHash": "TAmCv1RKXKLyQNCu9i++hNiLfojWb7SxQTxtQEJyPva1d2SfGEEXwtRWQ0dHSQun1rSclqZNLvS1aU/igFPSFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\ClientSocket\\ClientSocket.csproj",
+  "projectFilePath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\ClientSocket\\ClientSocket.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vodases\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.3\\microsoft.aspnet.signalr.client.2.4.3.nupkg.sha512",
     "C:\\Users\\Vodases\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512",

@@ -18,23 +18,25 @@ namespace ServiceLayer.Concrete
         private IFileService _fileService;
         private IAuthService _authService;
         private IUserLogDal _userLogDal;
+        private IOperationService _operationService;
+        private IWalletService _walletService;
 
 
 
      public ReportService(IUserService userService, IPrinterService printerService,
-             IFileService fileService, IAuthService authService,IUserLogDal userLogDal)
+                IFileService fileService, IAuthService authService, IUserLogDal userLogDal, IOperationService operationService,IWalletService walletService)
         {
-           
-                _fileService=fileService;
-                _printerService=printerService;
-                _userService=userService;
-                _authService=   authService;
-                _userLogDal=userLogDal;
-                
 
+            _fileService = fileService;
+            _printerService = printerService;
+            _userService = userService;
+            _authService = authService;
+            _userLogDal = userLogDal;
+            _operationService = operationService;
+            _walletService = walletService;
         }
 
-     public void CreateUserLog(PrintModel printModel)
+        public void CreateUserLog(PrintModel printModel)
      {
          UserLogDto user = new UserLogDto() {
              PrinterId = printModel.PrinterId,
@@ -51,12 +53,36 @@ namespace ServiceLayer.Concrete
      }
 
 
-     public List<UserLogDto> UserLogDto()
-     {
+        public List<UserLogDto> GetAll()
+        {
          return _userLogDal.GetAll();
-     }
+        }
 
+        public UserDetailReportDto UserDetailReport(Guid id,int filterDay)
+        {
+            var user=_userService.GetById(id);
+           var wallet= _walletService.GetById(user.WalletId);
+            var totalexpense = _operationService.TotalExpense(id);
 
+       
 
+            UserDetailReportDto userDetailReport = new UserDetailReportDto() 
+            {userId=id ,
+                userName=user.userName,userFullName=user.name+" "+user.lastName,
+                TotalBalance=wallet.Balance,TotalExpense=totalexpense,
+                TotalPageAmounth=10,// Default Value 
+                IncorrectTransactionAmount=0,//Default Value
+                DatedTransactionAmount=_operationService.TotalProcessWithDate(id,filterDay)
+
+              
+                
+            };
+            return userDetailReport;
+        }
+
+        public UserLogDto UserLogDtoById(Guid id)
+        {
+            return _userLogDal.Get(p=>p.Id==id);
+        }
     }
 }

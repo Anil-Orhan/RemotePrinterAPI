@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dRvN5Rs2PgjkXMIspZ54x2b3COe+3NECzUevTd60DD4U35OWm+EXtLAzkpl65Y6CC/P/CrfPnIYEpxc6FXLwRg==",
+  "dgSpecHash": "KzLqxS11PxtQN3aqzVBoBKqwjICL0S9hnnKoXMmJiTI/136d2C9to0oD861PjCO9jy2MBaCpwpLa5ArmQlza9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\WebTestPanelMVC\\WebTestPanelMVC.csproj",
+  "projectFilePath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\WebTestPanelMVC\\WebTestPanelMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vodases\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Vodases\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

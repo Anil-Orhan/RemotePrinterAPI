@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServiceLayer.Abstract;
+using System.Text.Json;
 
 namespace UploadPrj.Controllers
 {
@@ -10,10 +11,12 @@ namespace UploadPrj.Controllers
     public class UsersController : ControllerBase
     {
         private IUserService _userManager;
+        private IReportService _reportService;
 
-        public UsersController(IUserService userManager)
+        public UsersController(IUserService userManager, IReportService reportService)
         {
             _userManager = userManager;
+            _reportService = reportService;
         }
         [HttpGet("getall")]
         public IActionResult GetAll()
@@ -65,6 +68,18 @@ namespace UploadPrj.Controllers
                 return Ok();
           
            
+        }
+
+        [HttpGet("getdetailbyid")]
+        public IActionResult GetDetailById(Guid id)
+        {
+            var result = _reportService.UserLogDtoById(id);
+           
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
         }
     }
 }

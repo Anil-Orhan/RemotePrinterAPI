@@ -2139,11 +2139,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\UploadPrj\\UploadPrj.csproj",
+      "projectUniqueName": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\UploadPrj\\UploadPrj.csproj",
       "projectName": "UploadPrj",
-      "projectPath": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\UploadPrj\\UploadPrj.csproj",
+      "projectPath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\UploadPrj\\UploadPrj.csproj",
       "packagesPath": "C:\\Users\\Vodases\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\UploadPrj\\obj\\",
+      "outputPath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\UploadPrj\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vodases\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2160,11 +2160,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\EntityLayer\\EntityLayer.csproj"
             },
-            "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\ServiceLayer\\ServiceLayer.csproj": {
-              "projectPath": "C:\\Users\\Vodases\\Desktop\\PrintOmiGuncel\\backend\\ServiceLayer\\ServiceLayer.csproj"
+            "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\ServiceLayer\\ServiceLayer.csproj": {
+              "projectPath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\ServiceLayer\\ServiceLayer.csproj"
             }
           }
         }
