@@ -49,3 +49,20 @@ C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\DataAccessLayer\obj\Debug\ne
 C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
 C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
 C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll

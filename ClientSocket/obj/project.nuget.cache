@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "TAmCv1RKXKLyQNCu9i++hNiLfojWb7SxQTxtQEJyPva1d2SfGEEXwtRWQ0dHSQun1rSclqZNLvS1aU/igFPSFQ==",
+  "dgSpecHash": "hQzeuEi0Ssf4/Bh0D2GP0cF8/LyJV27A8RJq8tQWJOmaVjrCpS5GKY3hMYFTKqgSWwvAXSElAS8FNvNttBgiGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\ClientSocket\\ClientSocket.csproj",
+  "projectFilePath": "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\ClientSocket\\ClientSocket.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Vodases\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.3\\microsoft.aspnet.signalr.client.2.4.3.nupkg.sha512",
-    "C:\\Users\\Vodases\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512",
-    "C:\\Users\\Vodases\\.nuget\\packages\\rawprint.netstd-2.0\\1.0.0\\rawprint.netstd-2.0.1.0.0.nupkg.sha512"
+    "C:\\Users\\anilo\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.3\\microsoft.aspnet.signalr.client.2.4.3.nupkg.sha512",
+    "C:\\Users\\anilo\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512",
+    "C:\\Users\\anilo\\.nuget\\packages\\rawprint.netstd-2.0\\1.0.0\\rawprint.netstd-2.0.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }

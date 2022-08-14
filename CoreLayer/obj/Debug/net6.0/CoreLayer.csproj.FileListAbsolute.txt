@@ -43,3 +43,18 @@ C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\CoreLayer\obj\Debug\net6.0\C
 C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\CoreLayer\obj\Debug\net6.0\refint\CoreLayer.dll
 C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\CoreLayer\obj\Debug\net6.0\CoreLayer.pdb
 C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\CoreLayer\obj\Debug\net6.0\ref\CoreLayer.dll
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\bin\Debug\net6.0\CoreLayer.deps.json
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\bin\Debug\net6.0\CoreLayer.dll
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\bin\Debug\net6.0\CoreLayer.pdb
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\obj\Debug\net6.0\CoreLayer.csproj.AssemblyReference.cache
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\obj\Debug\net6.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\obj\Debug\net6.0\CoreLayer.AssemblyInfoInputs.cache
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\obj\Debug\net6.0\CoreLayer.AssemblyInfo.cs
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\obj\Debug\net6.0\CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\obj\Debug\net6.0\CoreLayer.csproj.CopyComplete
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\obj\Debug\net6.0\CoreLayer.dll
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\obj\Debug\net6.0\refint\CoreLayer.dll
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\obj\Debug\net6.0\CoreLayer.pdb
+C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\CoreLayer\obj\Debug\net6.0\ref\CoreLayer.dll

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Http.Headers;
 using System.IO;
+using EntityLayer.Abstract;
 using EntityLayer.Concrete;
 using EntityLayer.DTO;
 using ServiceLayer.Abstract;
@@ -18,11 +19,23 @@ namespace UploadPrj.Controllers
     {
         private IFileService _fileService;
         private IOptionService _optionService;
+        private IWalletService _walletService;
+
+        private IUserService _userService;
         //Test
-        public UploadController(IFileService fileService, IOptionService optionService)
+        public UploadController(IFileService fileService, IOptionService optionService,IWalletService walletService,IUserService userService)
         {
             _fileService = fileService;
             _optionService = optionService;
+            _walletService = walletService;
+            _userService = userService;
+            //Geçici Aktif Kullanıcı
+            //Bakiye İşlemleri Buraya Verilen Kullanıcı ID Üzerinden Yapılacak
+            var user = _userService.GetById(Guid.Parse("3fa85f64-5717-4562-b3fc-2c963f66ada6"));
+            StaticValues.ActiveUser=user;
+           
+            
+            
         }
         [HttpPost]
         [Route("savefile")]
@@ -134,28 +147,40 @@ namespace UploadPrj.Controllers
             Send();
 
             return Ok();
-
+            
             void Send()
             {
                 using (var process = new Process())
                 {
-                    process.StartInfo.FileName = @"C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\ClientSocket\bin\Debug\ClientSocket.exe";
-                    process.StartInfo.Arguments = $"";
-                    //process.StartInfo.FileName = @"cmd.exe";
-                    //process.StartInfo.Arguments = @"/c dir";     
-                    process.StartInfo.CreateNoWindow = true;
-                    process.StartInfo.UseShellExecute = false;
-                    process.StartInfo.RedirectStandardOutput = true;
-                    process.StartInfo.RedirectStandardError = true;
+                    var selectedWallet = _walletService.GetById(StaticValues.ActiveUser.WalletId);
+                    if (TryValidateModel(selectedWallet.Balance>=5))//Buraya da operasyonun toplam ücreti verilecek
+                    {
+                        process.StartInfo.FileName = @"C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\ClientSocket\bin\Debug\ClientSocket.exe";
+                        process.StartInfo.Arguments = $"";
+                        //process.StartInfo.FileName = @"cmd.exe";
+                        //process.StartInfo.Arguments = @"/c dir";     
+                        process.StartInfo.CreateNoWindow = true;
+                        process.StartInfo.UseShellExecute = false;
+                        process.StartInfo.RedirectStandardOutput = true;
+                        process.StartInfo.RedirectStandardError = true;
 
-                    process.OutputDataReceived += (sender, data) => Console.WriteLine(data.Data);
-                    process.ErrorDataReceived += (sender, data) => Console.WriteLine(data.Data);
-                    Console.WriteLine("starting");
-                    process.Start();
-                    process.BeginOutputReadLine();
-                    process.BeginErrorReadLine();
-                    var exited = process.WaitForExit(1000 * 10);
-                    Console.WriteLine($"exit {exited}");
+                        process.OutputDataReceived += (sender, data) => Console.WriteLine(data.Data);
+                        process.ErrorDataReceived += (sender, data) => Console.WriteLine(data.Data);
+                        Console.WriteLine("starting");
+                        process.Start();
+                        process.BeginOutputReadLine();
+                        process.BeginErrorReadLine();
+                        var exited = process.WaitForExit(1000 * 10);
+
+                        selectedWallet.Balance -= 3;
+                        _walletService.Update(selectedWallet);
+                        Console.WriteLine($"exit {exited}");
+                    }
+                    else
+                    {
+                        throw new Exception("İşlem İçin Bakiye Yetersiz");
+                    }
+                   
                 }
 
 

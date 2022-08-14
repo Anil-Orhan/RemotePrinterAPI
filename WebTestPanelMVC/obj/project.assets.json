@@ -2143,19 +2143,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vodases\\.nuget\\packages\\": {}
+    "C:\\Users\\anilo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\WebTestPanelMVC\\WebTestPanelMVC.csproj",
+      "projectUniqueName": "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\WebTestPanelMVC\\WebTestPanelMVC.csproj",
       "projectName": "WebTestPanelMVC",
-      "projectPath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\WebTestPanelMVC\\WebTestPanelMVC.csproj",
-      "packagesPath": "C:\\Users\\Vodases\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\WebTestPanelMVC\\obj\\",
+      "projectPath": "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\WebTestPanelMVC\\WebTestPanelMVC.csproj",
+      "packagesPath": "C:\\Users\\anilo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\WebTestPanelMVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Vodases\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\anilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2169,14 +2174,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\EntityLayer\\EntityLayer.csproj"
             },
-            "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\ServiceLayer\\ServiceLayer.csproj": {
-              "projectPath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\ServiceLayer\\ServiceLayer.csproj"
+            "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\ServiceLayer\\ServiceLayer.csproj": {
+              "projectPath": "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\ServiceLayer\\ServiceLayer.csproj"
             },
-            "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\UploadPrj\\UploadPrj.csproj": {
-              "projectPath": "C:\\Users\\Vodases\\Desktop\\printOmiGuncel1652\\backend\\UploadPrj\\UploadPrj.csproj"
+            "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\UploadPrj\\UploadPrj.csproj": {
+              "projectPath": "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\UploadPrj\\UploadPrj.csproj"
             }
           }
         }
@@ -2218,7 +2223,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
