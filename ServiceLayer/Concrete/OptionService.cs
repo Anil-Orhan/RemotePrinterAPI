@@ -61,7 +61,7 @@ namespace ServiceLayer.Concrete
         public bool AddOptionForOperation(Option entity, User user,List<File> files,Printer printer)
         {
           
-            fileSave(files);
+            //fileSave(files);
            entity= PreparationForOperations(entity);
            _optionDal.Add(entity);
         
@@ -90,10 +90,13 @@ namespace ServiceLayer.Concrete
         }
         public void fileSave(List<File> files)
         {
-            foreach (var file in files)
-            {
-                _fileService.Add(file);
-            }
+         
+                foreach (var file in files)
+                {
+                    _fileService.Add(file);
+                }
+            
+           
         }
     }
 }

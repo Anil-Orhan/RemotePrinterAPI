@@ -20,11 +20,12 @@ namespace ServiceLayer.Concrete
         private IUserLogDal _userLogDal;
         private IOperationService _operationService;
         private IWalletService _walletService;
+        private IPrintModelService _printModelService;
 
 
 
      public ReportService(IUserService userService, IPrinterService printerService,
-                IFileService fileService, IAuthService authService, IUserLogDal userLogDal, IOperationService operationService,IWalletService walletService)
+                   IFileService fileService, IAuthService authService, IUserLogDal userLogDal, IOperationService operationService, IWalletService walletService, IPrintModelService printModelService)
         {
 
             _fileService = fileService;
@@ -34,6 +35,7 @@ namespace ServiceLayer.Concrete
             _userLogDal = userLogDal;
             _operationService = operationService;
             _walletService = walletService;
+            _printModelService = printModelService;
         }
 
         public void CreateUserLog(PrintModel printModel)
@@ -70,7 +72,7 @@ namespace ServiceLayer.Concrete
             {userId=id ,
                 userName=user.userName,userFullName=user.name+" "+user.lastName,
                 TotalBalance=wallet.Balance,TotalExpense=totalexpense,
-                TotalPageAmounth=10,// Default Value 
+                TotalPageAmounth=_printModelService.GetAll().Count(p=>p.UserId==user.id),// Default Value 
                 IncorrectTransactionAmount=0,//Default Value
                 DatedTransactionAmount=_operationService.TotalProcessWithDate(id,filterDay)
 

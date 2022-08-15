@@ -46,3 +46,15 @@ C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\EntityLayer\obj\Debug\n
 C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
 C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
 C:\Users\anilo\Desktop\Vodases Projects\PrintOmi\backend\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll

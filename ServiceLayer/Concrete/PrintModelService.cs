@@ -9,12 +9,13 @@ namespace ServiceLayer.Concrete
     {
 
        private IPrintModelDal _printModelDal;
+      
      
 
-        public PrintModelService(IPrintModelDal printModelDal/*, IReportService reportService*/)
+        public PrintModelService(IPrintModelDal printModelDal)
         {
             _printModelDal = printModelDal;
-            
+           
         }
 
         public bool Add(PrintModel entity)

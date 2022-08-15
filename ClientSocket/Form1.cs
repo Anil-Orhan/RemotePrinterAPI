@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Management;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace ClientSocket
 {
     public partial class Form1 : Form
     {
+        private string dosya = "";
         private string str = "";
         private string filePath;
         private string fileName;
@@ -27,9 +29,10 @@ namespace ClientSocket
         IHubProxy _hubProxy;
         private string lastPath;
 
-        public Form1()
+        public Form1(string[] args)
         {
-
+            dosya = args[0];
+            
             InitializeComponent();
 
             GetLastFileLocation();
@@ -116,23 +119,28 @@ namespace ClientSocket
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+           
+          
 
-            GetLastFileLocation();
-
+          
             IPrinter printer = new Printer();
             // Print the file
-            if (lastPath!=null)
-
+            try
             {
+                printer.PrintRawFile(printerName, "C:\\yazdirmalar\\deneme.pdf", "deneme.pdf");
+           
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                throw;
+            }
                
 
-                printer.PrintRawFile(printerName, lastPath, "deneme.pdf");
-            }
-            else
-            {
-                MessageBox.Show("Bulunamadı!");
-            }
-
+           
+         
+         
 
 
 
@@ -140,7 +148,21 @@ namespace ClientSocket
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+
+            IPrinter printer = new Printer();
+            // Print the file
+            try
+            {
+                printer.PrintRawFile(printerName, dosya, "deneme.pdf");
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                throw;
+            }
+
         }
         private void HubConnection_StateChanged(StateChange obj)
         {
@@ -155,6 +177,46 @@ namespace ClientSocket
             if (this.InvokeRequired)
                 this.BeginInvoke(new Action(() => MessageBox.Show(log + Environment.NewLine)));
            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string searchQuery = "SELECT * FROM Win32_PrintJob";
+
+
+            ManagementObjectSearcher searchPrintJobs = new ManagementObjectSearcher(searchQuery);
+            ManagementObjectCollection prntJobCollection = searchPrintJobs.Get();
+
+            foreach (var prntJob in prntJobCollection)
+            {
+
+              
+                System.String jobName = prntJob.Properties["Name"].Value.ToString();
+
+                //Job name would be of the format [Printer name], [Job ID]
+                char[] splitArr = new char[1];
+                splitArr[0] = Convert.ToChar(",");
+                string prnterName = jobName.Split(splitArr)[0];
+                int prntJobID = Convert.ToInt32(jobName.Split(splitArr)[1]);
+                string documentName = prntJob.Properties["Document"].Value.ToString();
+
+
+                foreach (var item in prntJob.Properties)
+                {
+                    listBox1.Items.Add(item.Name +":"+item.Value);
+                }
+
+
+               
+
+
+
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
         }
     }
 

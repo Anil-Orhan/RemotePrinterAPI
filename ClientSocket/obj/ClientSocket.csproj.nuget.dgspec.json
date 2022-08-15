@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\ClientSocket\\ClientSocket.csproj": {}
+    "C:\\Users\\Vodases\\Desktop\\PrintOmi15081129\\backend\\ClientSocket\\ClientSocket.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\ClientSocket\\ClientSocket.csproj": {
+    "C:\\Users\\Vodases\\Desktop\\PrintOmi15081129\\backend\\ClientSocket\\ClientSocket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\ClientSocket\\ClientSocket.csproj",
+        "projectUniqueName": "C:\\Users\\Vodases\\Desktop\\PrintOmi15081129\\backend\\ClientSocket\\ClientSocket.csproj",
         "projectName": "ClientSocket",
-        "projectPath": "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\ClientSocket\\ClientSocket.csproj",
-        "packagesPath": "C:\\Users\\anilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anilo\\Desktop\\Vodases Projects\\PrintOmi\\backend\\ClientSocket\\obj\\",
+        "projectPath": "C:\\Users\\Vodases\\Desktop\\PrintOmi15081129\\backend\\ClientSocket\\ClientSocket.csproj",
+        "packagesPath": "C:\\Users\\Vodases\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vodases\\Desktop\\PrintOmi15081129\\backend\\ClientSocket\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\anilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Vodases\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

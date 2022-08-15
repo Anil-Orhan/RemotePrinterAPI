@@ -170,3 +170,15 @@ C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\WebTestPanelMVC\obj\Debug\ne
 C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.pdb
 C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.genruntimeconfig.cache
 C:\Users\Vodases\Desktop\printOmiGuncel1652\backend\WebTestPanelMVC\obj\Debug\net6.0\ref\WebTestPanelMVC.dll
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.csproj.AssemblyReference.cache
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.AssemblyInfoInputs.cache
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.AssemblyInfo.cs
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.csproj.CoreCompileInputs.cache
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.RazorAssemblyInfo.cache
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.RazorAssemblyInfo.cs
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.dll
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\WebTestPanelMVC\obj\Debug\net6.0\refint\WebTestPanelMVC.dll
+C:\Users\Vodases\Desktop\PrintOmi15081129\backend\WebTestPanelMVC\obj\Debug\net6.0\WebTestPanelMVC.pdb
