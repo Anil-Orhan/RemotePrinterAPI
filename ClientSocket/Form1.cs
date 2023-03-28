@@ -57,7 +57,7 @@ namespace ClientSocket
                 {
 
 
-                    File.Copy(openFileDialog1.FileName, Path.Combine(@"C:\Users\Vodases\Desktop\PrintOmiGuncel\backend\ClientSocket\Files",
+                    File.Copy(openFileDialog1.FileName, Path.Combine(@"C:\Users\*****\Desktop\******\backend\ClientSocket\Files",
                         Path.GetFileName(openFileDialog1.SafeFileName)), true);
 
 
